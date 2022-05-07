@@ -1,0 +1,67 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 4rem;
+  transition: all 3s ease;
+}
+
+.logo {
+  display: flex;
+  height: 5rem;
+  font-weight: bold;
+  gap: 1rem;
+  height: 4%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.logo > span > span {
+  color: var(--pink);
+}
+
+.memu {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  grid-area: 1rem;
+  height: 2.5rem;
+  margin-left: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 0.7rem;
+}
+
+.menuItems:hover {
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--activeItem);
+  margin-left: 0;
+}
+
+.active::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: var(--pure);
+  margin-right: calc(1rem - 8px);
+}
+
+.menu .menuItems:last-child {
+  position: absolute;
+  bottom: 2.3rem;
+  width: 100%;
+}
