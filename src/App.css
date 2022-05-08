@@ -28,4 +28,21 @@
   background-color: var(--glass);
   overflow: hidden;
   grid-template-columns: 11rem auto 20rem;
+  gap: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+.grid{
+  grid-template-columns: 10% 50% auto;
+  overflow-y: scroll;
+}
+}
+@media screen and (max-width: 758px){
+  .grid{
+  grid-template-columns: 1fr;
+  }
+  .grid::-webkit-scrollbar{
+    display: none;
+  }
 }
